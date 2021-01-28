@@ -6,7 +6,7 @@ test("returns default initial state of false when no action has been taken", () 
   expect(newState).toBe(false);
 });
 
-test("returns state of true upon recieving action type CORRECT_GUESS", () => {
+test("returns state of true upon receiving actionType CORRECT_GUESS", () => {
   const newState = successReducer(undefined, {
     type: actionTypes.CORRECT_GUESS,
   });
